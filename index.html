@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medus App</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <!-- <li><a href="#timer" class="nav-link">Timer</a></li> -->
+                <li><a href="#message" class="nav-link">Message</a></li>
+                <!-- <li><a href="#goods" class="nav-link">Goods</a></li> -->
+                <!-- <li><a href="#location" class=" nav-link">Location</a></li> -->
+                <li><a href="#aboutUs" class="nav-link">About Us</a></li>
+            </ul>
+        </nav>
+
+        <section class="seasons">
+            <article class="timer">
+                <!-- <h3>...till we get honey!</h3> -->
+                <div class="loader outer-ring center"></div>
+                <div class="inner-ring center"></div>
+                <div class="timerCount" id="timer">Timer
+                </div>
+                <h3>...till we get honey!</h3>
+            </article>
+            <article class="img" id="home">
+                <img src="images/linden2.jpg" alt="linden flowers">
+            </article>
+        </section>
+
+        <section class="hero">
+            <article class="message" id="message">
+                <button class="wrapper tooltip"><a
+                        href="https://wa.me/37129432229?text=Sveiki,%20man%20interes%C4%93%20vai%20ir%20iesp%C4%93jams%20nopirkt%20medu."
+                        target="whatsapp" rel="noopener noreferrer">
+                        <img src="images/white-whatsapp-icon-286929.png" alt="">
+
+                    </a>
+                    <span class="tooltiptext">Nosūtīt īsziņu</span>
+
+                </button>
+                <ul class="socials tooltip">
+                    <!-- <div class="share-btns"> -->
+                    <a class="facebook" rel="nofollow" href="javascript: void(0)"
+                        onClick="window.open('https://www.facebook.com/sharer.php?u=https://tsvgithub.github.io/Bookmark-landing-page/','sharer','status=0,toolbar=0,width=640,height=510');"
+                        title="" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="telegram" rel="nofollow" href="javascript: void(0)"
+                        onClick="window.open('https://telegram.me/share/url?url=https://tsvgithub.github.io/Bookmark-landing-page/&text=Izlasi!','sharer','status=0,toolbar=0,width=650,height=500');"
+                        title="" aria-label="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <!-- https://t.me/share/url?url={url}&text={text} -->
+                    <a class="twitter" rel="nofollow" href="javascript: void(0)"
+                        onClick="window.open('https://twitter.com/intent/tweet?text=Izlasi! https://tsvgithub.github.io/Bookmark-landing-page/','sharer','status=0,toolbar=0,width=650,height=500');"
+                        title="" aria-label="Tweet">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- </div> -->
+                    <div class="tooltiptext">Dalīties</div>
+
+                </ul>
+            </article>
+            <article class="bg-video">
+                <figure>
+                    <video class="dog" autoplay loop muted poster="">
+                        <source src="images/bees.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <figcaption>
+                        <small>Bee flying around flower petals collecting nectar by <a href="Vidsplay.com"> Vidsplay.com
+                            </a></small>
+                    </figcaption>
+                </figure>
+
+            </article>
+        </section>
+
+        <section class="about">
+            <article class="location" id="location">
+                <div class="map" id="map"></div>
+            </article>
+            <article class="aboutUs" id="aboutUs">
+                <img src="images/Organic-Logo.png" alt="">
+                <p>Sertifikāta Nr.05-081-2014 <br>
+                    "Doka", Baltinavas pagasts, Baltinavas novads, LV-4594<br>
+                    LV-BIO-02<br>
+                    Lauksaimniecība Latvija<br>
+                    Dažādu ziedu medus<br>
+                </p>
+            </article>
+        </section>
+
+        <footer class="mobile">
+            <nav class="mobileNav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <!-- <li><a href="#timer" class="nav-link">Timer</a></li> -->
+                    <li><a href="#message" class="nav-link">Message</a></li>
+                    <!-- <li><a href="#goods" class="nav-link">Goods</a></li> -->
+                    <!-- <li><a href="#location" class=" nav-link">Location</a></li> -->
+                    <li><a href="#aboutUs" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
