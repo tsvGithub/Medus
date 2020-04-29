@@ -344,11 +344,16 @@ TABLET STYLES */
     padding: 0.111rem 0;
   }
   /*******Article Timer -----------*/
+  .timer {
+    margin-bottom: 50px;
+  }
+  .timer h3 {
+    top: 18%;
+  }
   .outer-ring {
     height: 168px;
     width: 168px;
   }
-
   .inner-ring {
     height: 156px;
     width: 156px;
