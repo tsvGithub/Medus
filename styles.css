@@ -367,17 +367,6 @@ TABLET STYLES */
     =================================
         ==========================
 MOBILE STYLES  */
-@media screen and (max-width: 544px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
 
 @media screen and (max-width: 544px) and (orientation: portrait) {
   /*
@@ -473,5 +462,16 @@ MOBILE -> mobileNav
     color: #277e15;
     font-size: 1rem;
     font-weight: 600;
+  }
+}
+@media screen and (max-width: 544px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
