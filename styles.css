@@ -367,8 +367,19 @@ TABLET STYLES */
     =================================
         ==========================
 MOBILE STYLES  */
+@media screen and (max-width: 544px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 544px) and (orientation: portrait) {
   /*
 SEASONS -> timer
 HERO -> message
@@ -393,13 +404,22 @@ MOBILE -> mobileNav
   }
   .timer {
     width: 100%;
+    margin-top: -25%;
   }
   .timer h3 {
-    top: 20%;
+    top: 17%;
   }
   /*------------------------*/
   .message {
     width: 100%;
+    margin-top: -25%;
+  }
+  .message button.wrapper {
+    margin: 50px auto;
+  }
+  .socials {
+    justify-content: space-between;
+    width: 40%;
   }
   /*------------------------*/
   #location {
@@ -413,10 +433,10 @@ MOBILE -> mobileNav
   .about {
     flex-direction: column;
   }
-  #aboutUs {
+  .aboutUs {
     width: 100%;
+    padding: 0 10% 20%;
   }
-
   .aboutUs img {
     width: 50%;
   }
@@ -447,7 +467,7 @@ MOBILE -> mobileNav
   .mobileNav ul li {
     text-transform: uppercase;
     text-align: center;
-    line-height: 2rem;
+    line-height: 4rem;
   }
   .mobileNav > ul li a {
     color: #277e15;
