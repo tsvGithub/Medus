@@ -368,7 +368,7 @@ TABLET STYLES */
         ==========================
 MOBILE STYLES  */
 
-@media screen and (max-width: 544px) and (orientation: portrait) {
+@media screen and (max-width: 544px) {
   /*
 SEASONS -> timer
 HERO -> message
@@ -464,14 +464,118 @@ MOBILE -> mobileNav
     font-weight: 600;
   }
 }
-@media screen and (max-width: 544px) and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;
     width: 100vh;
+    height: 100vw;
     overflow-x: hidden;
     position: absolute;
     top: 100%;
     left: 0;
+  }
+  html,
+  body {
+    min-width: 320px;
+    width: 100%;
+    max-width: 100vh;
+    max-height: 100vw;
+  }
+  nav.navbar {
+    display: none;
+  }
+  article.img,
+  article.bg-video {
+    display: none;
+  }
+  .seasons {
+    height: 100vw;
+  }
+  .timer {
+    width: 100%;
+    margin-top: -25%;
+  }
+  .timer h3 {
+    top: 17%;
+  }
+  /*------------------------*/
+  .hero {
+    height: 100vw;
+  }
+  .message {
+    width: 100%;
+    margin-top: -25%;
+    height: 100vw;
+  }
+  .message button.wrapper {
+    margin: 50px auto;
+  }
+  .socials {
+    justify-content: space-between;
+    width: 40%;
+  }
+  /*------------------------*/
+  #location {
+    width: 100%;
+  }
+  .mapboxgl-canvas {
+    width: 100vh;
+    height: 100vw;
+    /* width: 100%;
+    height: 100%; */
+  }
+  #map {
+    width: 100vh;
+    height: 100vw;
+  }
+  /*------------------------*/
+  .about {
+    flex-direction: column;
+  }
+  .aboutUs {
+    width: 100%;
+    padding: 0 10% 20%;
+  }
+  .aboutUs img {
+    width: 50%;
+  }
+  #aboutUs {
+    width: 100vh;
+    height: 100vw;
+  }
+
+  /*---Nav--------------------------*/
+  footer.mobile {
+    grid-area: footer;
+    display: grid;
+  }
+  footer nav.mobileNav {
+    grid-area: footer;
+    background-color: #5bb648;
+    position: sticky;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    height: 10%;
+  }
+  .mobileNav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0;
+  }
+  .mobileNav ul li {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 4rem;
+  }
+  .mobileNav > ul li a {
+    color: #277e15;
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
